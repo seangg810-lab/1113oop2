@@ -16,7 +16,12 @@ class MyQueue<T> {
         }
         return queue.remove(0);
     }
-    
+    public T peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return queue.get(0);
+    }
     public boolean isEmpty() {
         return queue.isEmpty();
     }
